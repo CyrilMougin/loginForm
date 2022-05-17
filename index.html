@@ -22,28 +22,48 @@
             
             <div class="right-text">
             <p>This is not a real online service! You know you need something like this in your life
-                to help realize your deepest dreams. Sign up now to get started</p>
-            <p>you know you want to</p>
+                to help realize your deepest dreams.</p>
+            <p>Sign up <i>now</i> to get started</p>
+            <p>You know you want to</p>
             </div>
             <div class="right-form">
-                <form action="http://httpbin.org/post" method="post">
-                    <div>
-                      <label for="first_name">First Name:</label>
-                      <input type="text" name="first_name" id="first_name">
-                    </div>
-                  
-                    <div>
-                      <label for="last_name">Last Name:</label>
-                      <input type="text" name="last_name" id="last_name">
-                    </div>
-                  
-                    <div>
-                      <label for="age">Age:</label>
-                      <input type="number" name="age" id="age">
-                    </div>
-                  
-                    <button type="submit">Submit</button>
-                  </form>
+                    <form  action="http://httpbin.org/post" method="post">
+                        <div class="form-container">
+                            <div class="right-form-left">
+                                <div>
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" name="first_name" id="first_name">
+                                </div>
+
+                                <div>
+                                    <label for="mail">EMAIL</label>
+                                    <input type="email" name="mail" id="mail">
+                                </div>
+
+                                <div>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password">
+                                </div>
+                            </div>
+                            
+                            <div class="right-form-right">
+                                <div>
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" name="last_name" id="last_name">
+                                </div>
+
+                                <div><label for="phone">PHONE NUMBER</label>
+                                    <input type="tel" name="phone" id="tel">
+                                </div>
+                            
+                                <div>
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm_password" id="confirm_password">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
             </div>
             <div class="right-test">
                 test
