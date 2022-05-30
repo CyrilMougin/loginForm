@@ -26,45 +26,46 @@
             <p>Sign up <i>now</i> to get started</p>
             <p>You know you want to</p>
             </div>
-            <div class="right-form">
-                    <form  action="http://httpbin.org/post" method="post">
-                        <div class="form-container">
-                            <div class="right-form-left">
-                                <div>
+            <form  action="http://httpbin.org/post" method="post" class="right-form">
+                <div class="form-container">
+                    <h1 class="form-title">Let's do this</h1>
+                    <div class="form-container-fields">
+                        <div class="right-form-left">
+                            <div>
                                 <label for="first_name">FIRST NAME</label>
                                 <input type="text" name="first_name" id="first_name">
-                                </div>
-
-                                <div>
-                                    <label for="mail">EMAIL</label>
-                                    <input type="email" name="mail" id="mail">
-                                </div>
-
-                                <div>
-                                    <label for="password">PASSWORD</label>
-                                    <input type="password" name="password" id="password">
-                                </div>
                             </div>
-                            
-                            <div class="right-form-right">
-                                <div>
-                                <label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name">
-                                </div>
+                            <div>
+                                <label for="mail">EMAIL</label>
+                                <input type="email" name="mail" id="mail">
+                            </div>
 
-                                <div><label for="phone">PHONE NUMBER</label>
-                                    <input type="tel" name="phone" id="tel">
-                                </div>
-                            
-                                <div>
-                                <label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm_password" id="confirm_password">
-                                </div>
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password">
                             </div>
                         </div>
-                        <button type="submit">Submit</button>
-                    </form>
-            </div>
+                        
+                        <div class="right-form-right">
+                            <div>
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+
+                            <div><label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="tel">
+                            </div>
+                        
+                            <div>
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm_password" id="confirm_password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="form-submit" type="submit">Submit</button>
+            </form>
+    
             <div class="right-test">
                 test
             </div>
