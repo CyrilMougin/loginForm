@@ -12,9 +12,7 @@
         <div class="left">
             
             <div class="logo-container">
-                <img src="logo.svg" class="filter-white">
-                
-                </svg>    
+                <img src="logo.svg" class="filter-white">   
                 <p class="logo-text">Fox</p></div>
         </div>
         <div class="right">
@@ -33,42 +31,43 @@
                         <div class="right-form-left">
                             <div>
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" name="first_name" id="first_name">
+                                <input type="text" name="first_name" id="first_name" required >
                             </div>
                             <div>
                                 <label for="mail">EMAIL</label>
-                                <input type="email" name="mail" id="mail">
+                                <input type="email" name="mail" id="mail" required>
                             </div>
 
                             <div>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password" required>
                             </div>
                         </div>
                         
                         <div class="right-form-right">
                             <div>
                                 <label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name">
+                                <input type="text" name="last_name" id="last_name" required>
                             </div>
 
                             <div><label for="phone">PHONE NUMBER</label>
-                                <input type="tel" name="phone" id="tel">
+                                <input type="tel" name="phone" id="tel" required>
                             </div>
                         
                             <div>
-                                <label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm_password" id="confirm_password">
+                                <label for="confirm_password">CONFIRM PASSWORD </label>
+                                <input type="password" name="confirm_password" id="confirm_password" required >
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="form-submit" type="submit">Submit</button>
+                <div class=submit-container>
+                    <button class="form-submit" type="submit">Create account</button>
+                    <p class="submit-container-text">Already have an account? <a href="https://google.com">Log in</a></p>
+                </div>
             </form>
     
-            <div class="right-test">
-                test
-            </div>
+   
 
 
         </div>

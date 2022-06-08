@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+*,*:focus,*:hover{
+    outline:none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 body {
     font-family: "Helvetica", "Arial", sans-serif;
 }
@@ -11,26 +20,27 @@ body {
 .content {
     display: flex;
     min-height: 100vh;
-   
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    background:  url(./firefox.jpg);
-    background-repeat:no-repeat;
+    background:  url(./firefox.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height:100vh;
     width:35vw;
-    background-size: 40vw 100vh;  
 }
 
 .logo-container{
-    display: flex;
+    display: flex; 
     height: 10rem;
     width: auto;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 10rem;
     margin-top: 25vh;
+    
     justify-content: center;
     align-items: center;
 }
@@ -40,6 +50,13 @@ body {
     height: 12rem;
     color: white;
 }
+
+
+
+
+
+
+
 
 .right {
     flex: 1;
@@ -51,10 +68,10 @@ body {
 }
 
 .right-text{
-    font-size: 5rem;
-    max-width: 70%;
     font-size: 1.5rem;
+    max-width: 70%;
     font-weight: bold;
+    padding: 1rem 2rem 2rem;
 }
 
 
@@ -94,19 +111,44 @@ body {
     padding: 7px;
 }
 
-.form-submit {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 10px
+
+.right-form input:focus {
+    border-color: blue;
+    box-shadow: 0px 3px 5px grey;
+}
+
+.right-form input:invalid:focus {
+    border-color: red;
+    box-shadow: 0px 3px 5px grey;
 }
 
 
 
+.submit-container {
+    padding: 1rem 2rem 2rem;
+}
+.form-submit {
+    
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px grey;
+    background-color: orange;
+    cursor: pointer
+}
 
+.form-submit:active {
+    background-color: black;
+}
 
-
-
-
-
+.submit-container-text > a:link {
+    color: orange;
+}
 
 
 .filter-white {
@@ -121,4 +163,49 @@ body {
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
     -webkit-appearance: none;
     appearance: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px)  {
+    .content{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .left {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .logo-container {
+        margin-top: 0px;
+        height: auto;
+      
+    }
+
+    .right {
+        align-items: center;
+    }
+
+    .right-text{
+        text-align: center;
+    }
+
+    .right-form {
+        width: 100vw;
+    }
+    .form-container-fields {
+        flex-flow: column;
+    }
+
+    .right-form-left, .right-form-right {
+        width: auto;
+    }
+
+  
 }
